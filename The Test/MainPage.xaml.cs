@@ -40,8 +40,7 @@ namespace The_Test
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            object pOJO = POJO;
-            List<RootObject> data = await pOJO.GetData();
+            List<RootObject> data = await POJO.GetData();
 
             for (int i = 0; i < data.Count; i++)
             {
